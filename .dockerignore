@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# Docker
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Environment variables
+.env
+
+# Go
+/bin/
+/api
+/main
+*.exe
+*.test
+*.out
+go.work
+vendor/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
