@@ -8,26 +8,9 @@ import (
 	"github.com/jackc/pgx/v5/pgtype"
 )
 
-type Comment struct {
-	ID        pgtype.UUID
-	PostID    pgtype.UUID
-	UserID    pgtype.UUID
-	Body      string
-	CreatedAt pgtype.Timestamp
-}
-
-type Post struct {
-	ID        pgtype.UUID
-	UserID    pgtype.UUID
-	Title     string
-	Body      string
-	CreatedAt pgtype.Timestamp
-	UpdatedAt pgtype.Timestamp
-}
-
 type User struct {
 	ID           pgtype.UUID
 	Email        string
-	CreatedAt    pgtype.Timestamp
 	PasswordHash string
+	CreatedAt    pgtype.Timestamp
 }
